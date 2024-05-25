@@ -1,12 +1,11 @@
 // lib/main.dart
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:service_taxi/screens/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  if (kIsWeb) {
+  
     await Firebase.initializeApp(
       options: const FirebaseOptions(
           apiKey: "AIzaSyBSbsBDP4CeWe2z0yeWHBy9_puz8jHb_PQ",
@@ -17,10 +16,7 @@ void main() async {
           appId: "1:956242210472:web:4a099a9289e666be55dc9d",
           measurementId: "G-RQGFF41HLT"),
     );
-  } else {
-    Firebase.initializeApp();
-  }
-
+  
   runApp(const ServiceTaxi());
 }
 
