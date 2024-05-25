@@ -48,7 +48,7 @@ class ProfileScreen extends StatelessWidget {
                 await FirebaseAuth.instance.signOut();
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => SignInScreen()),
+                  MaterialPageRoute(builder: (context) => const SignInScreen()),
                 );
               },
               style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
