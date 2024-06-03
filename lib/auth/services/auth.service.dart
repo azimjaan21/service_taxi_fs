@@ -1,5 +1,4 @@
-// lib/services/auth_service.dart
-// ignore_for_file: avoid_print
+
 
 import 'package:firebase_auth/firebase_auth.dart';
 
